@@ -4,7 +4,7 @@ class Event extends BaseSql{
 	protected $id = null;
 	protected $idType = null;
 	protected $idGallery = null;
-	protected $idUsers = null;
+	protected $idUser = null;
 	protected $name = "";
 	protected $startDate;
 	protected $endDate;
@@ -84,5 +84,48 @@ class Event extends BaseSql{
 	}
 	public function setNbParticipant($nbParticipant) {
 		$this->nbParticipant = $nbParticipant;
+	}
+	public function configFormAdd($token = null){
+
+		return [
+			"config"=>["method"=>"POST", "action"=>"", "submit"=>"Ajouter"],
+
+			"input"=>[
+
+				"name"=>[
+					"type"=>"text",
+					"placeholder"=>"Le nom de votre événement",
+					"required"=>true, 
+					"minString"=>2, 
+					"maxString"=>100
+				],
+				"startDate"=>[
+					"type"=>"date",
+					"placeholder"=>"Date de debut de votre événement",
+					"required"=>true
+				],
+				"endDate"=>[
+					"type"=>"date",
+					"placeholder"=>"Date de fin de votre événement",
+					"required"=>false
+				],
+				"startRegDate"=>[
+					"type"=>"date",
+					"placeholder"=>"Date de début des inscriptions",
+					"required"=>false
+				],
+				"endRegDate"=>[
+					"type"=>"date",
+					"placeholder"=>"Date de fin des inscriptions",
+					"required"=>false
+				],
+				"token"=>[
+					"type"=>"hidden",
+					"value"=>$token,
+					"required"=>true
+				]
+
+			]
+		];
 	}
 }
