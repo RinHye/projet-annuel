@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*
+* Section de gauche
+* (nav version grands écrans)
+*
+*/
+.navBack {
+  background-color: #333333;
+  padding: 0; }
+
+#eventive {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#titreBackOffice {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: white;
+  margin: 0; }
+
+#profil {
+  padding-top: 10px;
+  background-image: url("../img/fondProfil.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nomProfil {
+  font-weight: bold;
+  font-style: italic; }
+
+#divImgProfil {
+  border-radius: 50%;
+  background-image: url("../img/pikachu.jpg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  background-position: center; }
+
+#pencilIcon {
+  width: 15px; }
+
+.navBackUl {
+  padding-left: 0;
+  margin: 0; }
+
+.navBackUl li {
+  list-style: none;
+  padding: 15px; }
+
+.navBackUl li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-style: italic; }
+
+.divIcons {
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px; }
+
+li:nth-child(1) .divIcons {
+  background-color: #3AD893; }
+
+li:nth-child(2) .divIcons {
+  background-color: #FF6F94; }
+
+li:nth-child(3) .divIcons {
+  background-color: #00A2D6; }
+
+li:nth-child(4) .divIcons {
+  background-color: #E3C120; }
+
+.linkIcons {
+  width: 18px;
+  position: relative;
+  top: 3px;
+  left: 2px; }
+
+/*
+* Section de droite
+* (le contenu hors nav)
+* Grands écrans
+*
+*/
+.containerPageBack {
+  background-color: white; }
+
+main.col-lg-10, main.col-md-10, main.col-sm-10, main.col-xs-10 {
+  margin: 0;
+  padding: 0; }
+
+#headerBack {
+  background-color: #E0E0E0;
+  padding: 10px;
+  border-bottom: 1px solid #BFBFBF; }
+
+.titreSection {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 0; }
+
+#footerBack {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  padding: 10px; }
+
+#headerXS {
+  display: none; }
+
+#donneesChiffrees {
+  display: none; }
+
+.titreSectionXS {
+  display: none; }
+
+.statsCercles {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around; }
+
+.divCercles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+div.divCercles:nth-child(1) .cercles {
+  border-color: #6FCF97; }
+
+div.divCercles:nth-child(2) .cercles {
+  border-color: #2D9CDB; }
+
+div.divCercles:nth-child(3) .cercles {
+  border-color: #F2C94C; }
+
+.divCercles h2 {
+  font-size: 14px; }
+
+.cercles {
+  border: 6px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px; }
+
+.cercles > p {
+  font-size: 40px;
+  font-weight: bold; }
+
+.titresStats {
+  font-size: 14px; }
+
+canvas {
+  margin: 5px; }
+
+.statsBas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center; }
+
+.containerPageBack {
+  padding: 0; }
+
+.bounceRateDiv {
+  height: 300px; }
+
+.liActif {
+  background-color: #4F4F4F; }
+
+@media screen and (max-width: 991px) {
+  #headerXS::before {
+    content: "E-ventive";
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    color: white;
+    padding: 1em; }
+  #headerXS {
+    background-color: black;
+    display: block;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    width: 100%; }
+  .navBack {
+    max-height: 0; }
+  #navXS ul li a::visited, #navXS ul li a::link {
+    color: white; }
+  #navXS ul li a {
+    text-decoration: none; }
+  .active {
+    color: #00A2D6; }
+  #navXS ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px; }
+  #navXS ul, #navXS, #navXS ul li {
+    padding: 0;
+    background-color: black;
+    text-align: center; }
+  #btnMenu {
+    float: right;
+    margin-right: 5px;
+    border-radius: 2px;
+    padding: 5px;
+    border: 0 solid #00A2D6;
+    background-color: #00A2D6;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer; }
+  #headerBack, #eventive, .navBack {
+    display: none; }
+  .ouvert, .ferme {
+    transition: all 1s; }
+  .ouvert {
+    max-height: auto; }
+  .ferme {
+    max-height: 0;
+    display: none; }
+  .titreSectionXS {
+    display: block;
+    font-size: 16px;
+    margin-top: 40px; }
+  .iconesStats {
+    width: 4em; } }
+
+.fleches {
+  width: 12px;
+  margin-left: 5px; }
+
+@media screen and (max-width: 768px) {
+  .statsCercles {
+    display: none; }
+  #donneesChiffrees {
+    display: flex; }
+  .iconesStats {
+    width: 15%; }
+  .divDonnees {
+    color: white;
+    margin: 5px; }
+  #bleu {
+    background-color: #2F80ED; }
+  #jaune {
+    background-color: #F2C94C; }
+  #vert {
+    background-color: #27AE60; }
+  .nbRectangle {
+    font-size: 50px; }
+  .iconesStats {
+    width: 4em; } }

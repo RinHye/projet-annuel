@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/toulol/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/home/toulol/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle tp_sass@1.0.0~prewatch: tp_sass@1.0.0
+6 silly lifecycle tp_sass@1.0.0~prewatch: no script for prewatch, continuing
+7 info lifecycle tp_sass@1.0.0~watch: tp_sass@1.0.0
+8 verbose lifecycle tp_sass@1.0.0~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle tp_sass@1.0.0~watch: PATH: /home/toulol/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/toulol/Bureau/mvc/www/public/node_modules/.bin:/home/toulol/.nvm/versions/node/v5.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+10 verbose lifecycle tp_sass@1.0.0~watch: CWD: /home/toulol/Bureau/mvc/www/public
+11 silly lifecycle tp_sass@1.0.0~watch: Args: [ '-c', 'node-sass --watch scss -o css' ]
+12 silly lifecycle tp_sass@1.0.0~watch: Returned: code: 126  signal: null
+13 info lifecycle tp_sass@1.0.0~watch: Failed to exec watch script
+14 verbose stack Error: tp_sass@1.0.0 watch: `node-sass --watch scss -o css`
+14 verbose stack Exit status 126
+14 verbose stack     at EventEmitter.<anonymous> (/home/toulol/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/toulol/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid tp_sass@1.0.0
+16 verbose cwd /home/toulol/Bureau/mvc/www/public
+17 error Linux 4.4.0-116-generic
+18 error argv "/home/toulol/.nvm/versions/node/v5.0.0/bin/node" "/home/toulol/.nvm/versions/node/v5.0.0/bin/npm" "run" "watch"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error tp_sass@1.0.0 watch: `node-sass --watch scss -o css`
+22 error Exit status 126
+23 error Failed at the tp_sass@1.0.0 watch script 'node-sass --watch scss -o css'.
+23 error This is most likely a problem with the tp_sass package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node-sass --watch scss -o css
+23 error You can get their info via:
+23 error     npm owner ls tp_sass
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffedcc;
+  margin: 50px;
+  font-family: "Indie Flower", cursive; }
+
+.clearfix::after {
+  /*clearfix hack !! Controle les floats*/
+  content: '';
+  display: table;
+  clear: both; }
+
+.clearfix::before {
+  /*clearfix hack !! Previent le margin collapse en haut */
+  content: '';
+  display: table; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  float: left;
+  display: inline-block;
+  width: 20%; }
+
+nav a {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 20px; }
+
+section {
+  background-color: white; }
+
+article > header {
+  background-color: red;
+  color: white;
+  padding: 5px 20px; }
+
+aside > header {
+  background-color: #ff3333;
+  color: white;
+  padding: 5px 20px; }
+
+article > main {
+  background-color: white;
+  padding: 20px 20px; }
+
+aside > main {
+  background-color: white;
+  padding: 20px 20px; }
+
+article, aside {
+  float: left; }
+
+article {
+  width: 60%; }
+
+aside {
+  width: 40%; }
+
+p {
+  line-height: 2em; }
+
+@media screen and (max-width: 800px) {
+  article, aside {
+    width: 100%; } }
+
+@media screen and (max-width: 640px) {
+  li {
+    width: 100%; }
+  ul {
+    max-height: 0;
+    transition: all 0.5s linear;
+    overflow: hidden; }
+  .btn_menu_mobile::before {
+    content: "Menu";
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; }
+  .ouvert {
+    /*on ne fait pas d'animation sur height car les valeurs auto ou inherit n'initient pas la transition css*/
+    max-height: 1000px; } }

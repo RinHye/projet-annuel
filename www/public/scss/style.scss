@@ -1,0 +1,48 @@
+@import "_variables";
+@import "grid";
+@import "backOfficeCommon";
+html, body {
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	font-family: $main-font;
+	font-size: 14px;
+
+}
+
+
+.clearfix::after{   /*clearfix hack !! Controle les floats*/
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.clearfix::before{   /*clearfix hack !! Previent le margin collapse en haut */
+	content:'';
+	display: table;
+}
+button {
+	margin:0;
+}
+.btn-blue {
+	background-color: #00A2D6;
+	color: white;
+}
+.btn-blue:hover {
+	background-color: #008BB8;
+}
+.btn {
+	border: 1px solid transparent;
+	display: inline-block;
+	padding: 0.375em 0.75em;
+	border-radius: 0.25em;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+
+}
